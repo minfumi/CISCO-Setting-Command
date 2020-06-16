@@ -17,6 +17,15 @@ Switch(config)# hostname S1
 S1(config)#
 ```
 
+## グローバルコンフィギュレ―ションモードからIPアドレス設定
+```
+S1# config t
+S1(config)# interface ???
+S1(config-if)# ip address ???.???.???.??? ???.???.???.???
+S1(config-if)# no shutdown
+S1(config-if)# exit
+S1(config)# 
+
 ## 不要なDNS lookupを防止する
 ```
 S1(config)# no ip domain-lookup
